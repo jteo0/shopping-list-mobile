@@ -5,10 +5,12 @@ import 'package:shopping_list/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
+  static const IconData checklist = IconData(0xe15b, fontFamily: 'MaterialIcons');
+  static const IconData addShoppingCart = IconData(0xe05a, fontFamily: 'MaterialIcons');
 
   final List<ShopItem> items = [
-    ShopItem("Lihat Produk", Icons.checklist),
-    ShopItem("Tambah Produk", Icons.add_shopping_cart),
+    ShopItem("Lihat Produk", checklist),
+    ShopItem("Tambah Produk", addShoppingCart),
     ShopItem("Logout", Icons.logout),
   ];
 

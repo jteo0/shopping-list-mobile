@@ -4,6 +4,7 @@ import 'package:shopping_list/screens/shoplist_form.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
+  static const IconData addShoppingCart = IconData(0xe05a, fontFamily: 'MaterialIcons');
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,7 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.add_shopping_cart),
+            leading: const Icon(addShoppingCart),
             title: const Text('Tambah Produk'),
             // Bagian redirection ke ShopFormPage
             onTap: () {
